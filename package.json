@@ -1,0 +1,33 @@
+{
+  "name": "learelecton",
+  "version": "1.0.0",
+  "description": "app",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ./index.js",
+    "pack": "electron-builder --dir",
+    "build": "electron-builder"
+  },
+  "author": "mikele",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "jquery": "^3.5.0",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "electron": "7.0.0",
+    "electron-packager": "^14.2.1"
+  },
+  "build": {
+    "appId": "com.electron.learelecton",
+    "files": [
+      "build/**/*",
+      "./index.js"
+    ],
+    "mac": {
+      "category": "your.app.category.type"
+    }
+  }
+}
